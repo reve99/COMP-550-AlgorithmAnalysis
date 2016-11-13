@@ -106,7 +106,7 @@ public class MajorityElement {
         for (int i = 0; i < n; i++) {
             a[i] = scanner.nextInt();
         }
-        if (getMajorityElement(a, 0, a.length) != -1) {
+        if (getMajorityElement_Linear(a, 0, a.length) != -1) {
             System.out.println(1);
         } else {
             System.out.println(0);
