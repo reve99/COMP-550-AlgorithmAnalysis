@@ -36,7 +36,7 @@ public class Inversions {
         return numberOfInversions;
     }
     private static long merge(int[] a, int[] b, int l1, int h1, int l2, int h2) {
-        int count = 0;
+        long count = 0;
         // BZ: use same portion of temporary array as the input array a
         int i = l1, j = l2, index = l1;
         while (i <= h1 && j <= h2) {  // ensure neither half is exhausted
@@ -59,7 +59,7 @@ public class Inversions {
     }
 
     public static void main(String[] args) {
-        try {
+        /*try {
             // String filename = "test-inversions-medium.txt";  // 2372
             String filename = "test-inversions-large.txt";  // 2507223936
             BufferedReader br = new BufferedReader(new FileReader(
@@ -79,15 +79,15 @@ public class Inversions {
             ex.printStackTrace();
         } catch (IOException io) {
             io.printStackTrace();
-        }
+        }*/
 
-        /* Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
             a[i] = scanner.nextInt();
         }
-        scanner.close();*/
+        scanner.close();
     }
 }
 
